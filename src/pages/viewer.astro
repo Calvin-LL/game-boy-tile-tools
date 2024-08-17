@@ -1,0 +1,35 @@
+---
+import Intro from "@/components/Intro.astro";
+import ViewerApp from "@/components/ViewerApp.vue";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Game Boy 2BPP Image Viewer"
+  description="A tool to view Game Boy image hex data"
+>
+  <main>
+    <h1>Game Boy 2BPP Image Viewer</h1>
+    <Intro />
+    <p>
+      There's also <a href="/">Game Boy Color Image to Tiles Converter</a>
+    </p>
+    <ViewerApp client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+
+    > p {
+      display: block;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+  }
+  h1 {
+    text-align: center;
+  }
+</style>

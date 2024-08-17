@@ -1,0 +1,28 @@
+{
+  "name": "game-boy-color-image-to-tiles-palettes",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.1",
+    "@astrojs/vue": "^4.5.0",
+    "@vueuse/core": "^11.0.0",
+    "astro": "^4.13.1",
+    "change-case": "^5.4.4",
+    "highlight.js": "^11.10.0",
+    "image-q": "^4.0.0",
+    "typescript": "^5.5.4",
+    "vue": "^3.4.35"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8",
+    "vitest": "^2.0.5"
+  }
+}

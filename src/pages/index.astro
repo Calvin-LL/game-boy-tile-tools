@@ -1,0 +1,35 @@
+---
+import ConverterApp from "@/components/ConverterApp.vue";
+import Intro from "@/components/Intro.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Game Boy Color Image to Tiles Converter"
+  description="A simple tool to convert an image to a C file that can be used to display the image in a Game Boy Color game"
+>
+  <main>
+    <h1>Game Boy Color Image to Tiles Converter</h1>
+    <Intro />
+    <p>
+      There's also <a href="/viewer">Game Boy 2BPP Image Viewer</a>
+    </p>
+    <ConverterApp client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+
+    > p {
+      display: block;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+  }
+  h1 {
+    text-align: center;
+  }
+</style>
