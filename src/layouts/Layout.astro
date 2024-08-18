@@ -39,4 +39,20 @@ const { title, description } = Astro.props;
       Courier New,
       monospace;
   }
+
+  a {
+    color: #0070f3;
+
+    @media (prefers-color-scheme: dark) {
+      color: #63b3ed;
+    }
+
+    &:visited {
+      color: #0070f3;
+
+      @media (prefers-color-scheme: dark) {
+        color: #63b3ed;
+      }
+    }
+  }
 </style>
