@@ -159,7 +159,9 @@ function onFileChange(e: Event) {
 
 <template>
   <div class="app">
-    <p>Only accepts a PNG file of 160(width) x 144(height) pixels</p>
+    <p v-if="!palette && !paletteProgress">
+      Only accepts a PNG file of 160(width) x 144(height) pixels
+    </p>
     <input
       type="file"
       accept="image/png"
